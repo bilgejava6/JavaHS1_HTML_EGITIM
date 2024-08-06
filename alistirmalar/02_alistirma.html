@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-body{
+            border: 2px solid #f08c00;
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 20px;            
+            border-radius: 10px;
+        }
+        .form-label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-input{
+            width: 96%;
+            padding: 10px 2%;
+            margin-bottom: 5px;
+            border: 1px solid gray;
+            border-radius: 7px;
+        }
+        .btn{
+            background-color:#f08c00;
+            border: 1px solid #a66812;
+            border-radius: 10px;
+            padding: 8px 30px;
+            color: white;
+        }
+        .div-right{
+            text-align: end;
+        }
+        .div-center{
+            text-align: center;
+        }
+        .div-content{
+            margin-top: 10px;
+            margin-left: 3%;
+            width: 94%;
+            margin-bottom: 10px;
+        }
+        .btn:hover{
+            background-color: #efd6b2;
+            cursor: pointer;
+        }
+        .btn-full{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-body">
+        <div class="div-content">
+            <label class="form-label" for="name">Ad Soyad</label>
+            <input class="form-input" type="text" name="name">
+        </div>
+        <div class="div-content">
+            <label class="form-label" for="username">Kullanıcı adı</label>
+            <input class="form-input" type="text" name="username">
+        </div>
+        <div class="div-content">
+            <label class="form-label" for="password">Şifre</label>
+            <input class="form-input" type="password" name="password">
+        </div>
+        <div class="div-content">
+            <label class="form-label">yazılım bilgileri</label>
+            <input type="checkbox"> <label> JavaSE</label>
+            <input type="checkbox"> <label> Spring Boot</label>
+            <input type="checkbox"> <label> Spring JPA</label> <br>
+            <input type="checkbox"> <label> Hibrenate</label>
+            <input type="checkbox"> <label> GCP</label>
+            <input type="checkbox"> <label> Kubernetes</label>            
+        </div>
+        <div class="div-content">
+            <label class="form-label">Şehir</label>
+            <select class="form-input">
+                <option>Seçiniz</option>
+                <option value="01">Adana</option>
+                <option value="06">Ankara</option>
+                <option value="34">İstanbul</option>
+                <option value="48">Muğla</option>                
+            </select>
+        </div>
+        <div class="div-content">
+            <button class="btn btn-full" type="button">Üyeliği Tamamla</button>
+        </div>
+        <div class="div-content div-center">
+            <a href="01_alistirma.html">giriş yap</a>
+        </div>
+    </div>
+</body>
+</html>

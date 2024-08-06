@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Directions</title>
+    <style>
+        .container{
+            display: flex;
+            min-height: 450px;
+            border: 2px solid green;
+            justify-content: space-between; /** row olarak yatayda hizalama yapar.*/
+            align-items: flex-start ; /** row olarak dikeyde hizlama için kullanılır */
+
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            border: 1px solid salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

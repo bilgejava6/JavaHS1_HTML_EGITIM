@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Kullanımı</title>
+    <style>
+        .container{
+            flex-direction: row;
+            display: flex;
+            border: 2px solid saddlebrown;
+            min-height: 450px;
+        }
+        .item{
+            border: 1px solid blue;
+            height: 100px;
+            margin: 5px;
+            
+        }
+        .item-1{
+            flex: 2;
+        }
+        .item-2{
+            flex: 6;
+        }
+        .item-3{
+            flex: 4;
+        }
+        .item-4{
+            flex: 2;
+        }
+        .item-5{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1"><label>item-1</label></div>
+        <div class="item item-2"><label>item-2</label></div>
+        <div class="item item-3"><label>item-3</label></div>
+        <div class="item item-4"><label>item-4</label></div>
+        <div class="item item-5"><label>item-5</label></div>
+    </div>
+</body>
+</html>

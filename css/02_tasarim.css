@@ -1,0 +1,32 @@
+p{
+    color: brown;
+}
+/**
+ TAG direkt seçilebilir.
+ id kullanarak seçilebilir. # kullanılır.
+ class kullanarak seçilebilir. . kullanılır
+*/
+
+#baslik{
+    color: green;
+    border: 2px dotted blueviolet;
+}
+
+.orta-konu{
+    color: violet;
+    border: 2px solid saddlebrown;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding:10px;
+}
+
+input{
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 70%;
+
+}
+
+input:focus{
+    background-color: antiquewhite;
+}
