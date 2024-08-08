@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(237, 242, 246);
+}
+.sosyal-header{   
+    background-color: rgb(63,66,87);
+}
+
+.sosyal-body{
+    width: 80%;
+    margin-top: 50px;
+}
+.user-middle{
+    height: 100px;
+    border-radius: 5px;
+    background-color: white;
+}
+.user-header{
+    background-image: url('https://html.crumina.net/html-olympus/img/top-header1.webp');
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.user-card{
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 1%;
+    width: 23%;
+}
+.user-title{
+    height: 100px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.page-label{
+    font-size: small;
+    font-weight: bolder;
+    color: white;
+}
+
+.search-input-bg-color{
+    background-color: rgb(73, 76,98);  
+}
+
+.search-input, .search-input:focus{
+    background-color: rgb(73, 76,98);
+    border: none;         
+}
+.search-input::placeholder{
+    color: rgb(117, 117, 117);  
+}
+.sosyal-text-color-1{
+    color: rgb(117, 117, 117);  
+}
+
+.sosyal-icon{
+    padding: .375rem .75rem;
+
+}
+.notif{
+    display: flex;
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.notif-label{
+    font-size: 10px;
+    font-weight: bold;
+}
