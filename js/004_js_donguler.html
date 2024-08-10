@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="yazilim">
+        
+    </ul>
+
+    <script>
+        /**
+         * for(){}
+         * while(){}
+         * .foreach
+         * .map
+        */
+       for (let i = 0; i < 5; i++) {
+            console.log('döngü devam....: ', i);
+       }
+       // array
+       const list = ['JavaSE','JavaEE','C#','.NET Framowork','Oracle', 'PHP','MongoDB'];
+       const ulList = document.getElementById('yazilim');
+       for(let i=0;i<list.length;i++){
+        console.log(list[i]);
+        ulList.innerHTML  += '<li>'+ list[i] +'</li>';
+       }
+    </script>
+</body>
+</html>

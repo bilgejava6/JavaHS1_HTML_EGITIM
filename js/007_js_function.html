@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button type="button" onclick="tanim('Benim JS uygulamam')">Mesajını ilet</button>
+
+    <script>
+        /**
+         * function tanımı Java da method tanımına benzer ancak aynı değilledir.
+         * 1- bir function dışarıdan değer talep ederken, değerlerin type larını 
+         * belirtmek zorunda değildir.
+         * 2- bir function işlem sonucunda bir dönüş yapsa da yapmasa da return
+         * type belirtmek zorunda değildir.
+        */
+       function toplam(s1,s2){
+        let sonuc = s1+s2;
+        return sonuc;
+       }
+       console.log('toplama işlemi sayı ile.....: ', toplam(9,8));
+       console.log('toplama işlemi metin ile....: ', toplam('54','89'));
+       console.log('toplama işlemi metin ile....: ', toplam('beş','iki'));
+       
+       const islem = function bolme(bolunen,bolen){
+        return bolunen / bolen;
+       };
+
+       console.log('bölme işlemi....: ', islem(28,3));
+
+       const tanim = (mesaj)=>{
+        alert('mesah yolla.....: '+ mesaj);
+       };
+
+    </script>
+</body>
+</html>

@@ -40,7 +40,10 @@
          */ 
         function kontrolEt(){
            const ad = document.getElementById('username').value;
-           console.log('yazılan ifade', ad);
+            if(ad.length <=3 || ad.length >=32)
+                alert('Kullanıcı adı 3 ile 32 karakter arsında olmalıdır.');
+            else
+                alert('GİRİŞ YAPILDI');
         }
     </script>
 </body>
