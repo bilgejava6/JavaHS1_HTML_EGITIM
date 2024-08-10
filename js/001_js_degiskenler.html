@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Script Değişkenleri kullanmak</h1>
+    <script>
+        /***
+         * Java da System.out.println("Selam"); -> output: console:> selam
+         */
+        console.log('Selam arkadaşlar');
+        var s1 = 5; // sayısal bir değişken
+        var ifade = 'merhaba js'; // string ifade değişkeni
+
+        console.log('sayi..: ', s1);
+        s1 = 'bu artık bir metin';
+        console.log('sayi..: ',s1);
+
+        let sayi = 5;
+        let metin = 'bu akşam ders yok';
+        // const ile bir değerin atandıktan sonra değişmemesini garantiliyorsunuz.
+        const sabitIfade = 'bu değer değişmez';
+        /**
+         * JS de kodlar yazılırken hata oluşmaz, ide bunu özel eklendiler ile size bildirebilir ancak
+         * bir html sayfasının görüntülenmesine engel değildir. İşlevselliği etkilediği için hatayı 
+         * sayfa açılırken görmeyebilirsiniz. Ancak hatanın oluştuğu andan itibaren diğer 
+         * kodlamalar çalışmayacaktır.
+         */ 
+        // sabitIfade = 'yeni değer';  -- sabit değişken değiştirilemediği için hata alırsınız.
+
+        let ad = prompt('Lütfen adınızı giriniz...');
+
+        //alert('sayfamız yüklendi.');
+        console.log(ad,' hoş geldiniz.');
+
+
+    </script>
+</body>
+</html>

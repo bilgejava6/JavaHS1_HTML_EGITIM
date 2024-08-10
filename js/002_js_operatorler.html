@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Atama operatörü =
+        let s1 = 5;
+        let s2 = 509;
+        // İşlem +,-,/,*,%
+        let toplam = s1 + s2;
+        let fark = s2 - s1;
+        let bolum = s2 / s1;
+        let carpim = s1 * s2;
+        let mod = s2 % s1;
+        // +=, /=, *=, -=, %=
+        // ==, >,<, <=, >=, 
+        // !, !=
+        // ÖDEV, == ile === aynı görevi ifa eder ancak aralarında bir fark vardır nedir bu?
+
+        let vize = prompt('vize notunuzu giriniz...: ');
+        let final = prompt('final notunuzu giriniz...: ');
+        let ort = (parseInt(vize) + parseInt(final)) / 2;
+        console.log('ortalama', ort);
+        let durum = ort >=50 ? 'Geçti' : 'Başka sefere';
+        console.log('sınıf geçme durumunuz....: ', durum);
+    </script>
+</body>
+</html>

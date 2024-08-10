@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+
+        <input type="text" id="username" placeholder="kullanıcı adı"> <br><br>
+
+        <button type="button" onclick="kontrolEt()">Gönder</button>
+
+    </div>
+
+
+    <script>
+        /**
+         * if(condition)
+         * if()...else...
+         * if()...else if()....else...
+         * 
+         * switch(value){
+         *  case A .... break;
+         *  case B .... break;
+         *  default;
+         * }
+         */ 
+        /**
+         * DİKKAT!!!!!
+         * Her hangibir TAG props larının işlevine göre bir JS kodunu tetikleyebilir. örn:
+         * butona tıklamak, metnin içerisine yazıyazmak, bir select içinden değer seçmek, v.s.
+         */ 
+        function kontrolEt(){
+           const ad = document.getElementById('username').value;
+           console.log('yazılan ifade', ad);
+        }
+    </script>
+</body>
+</html>
