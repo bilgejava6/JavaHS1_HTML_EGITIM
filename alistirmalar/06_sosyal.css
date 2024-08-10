@@ -29,6 +29,7 @@ body{
     border-radius: 5px;
     margin: 1%;
     width: 23%;
+    padding: 0 !important;
 }
 .user-title{
     height: 100px;
@@ -138,4 +139,102 @@ body{
     font-weight: bolder;
     color: rgb(98, 100, 115);
     margin-left: 20px;
+}
+
+.user-card-header{
+    background-image: url('https://html.crumina.net/html-olympus/img/friend1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.user-card-body{
+    height: 70%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user-card-body .row {
+    height: 20%;
+}
+
+.user-card-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    border: 0.6px solid rgba(168, 166, 166, 0.45);
+}
+
+.user-card-image-container{
+    margin-top: -38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 76px;
+    background-color: white;
+}
+
+.user-card-name{
+    font-size: 16px;
+    color: rgb(34, 34, 36);
+    font-weight: bolder;
+}
+.user-card-name:hover{
+    color: red;
+}
+.user-card-address{
+    font-size: 12px;
+    color: rgb(98, 100, 115);
+}
+.user-card-count{
+    font-size: 14px;
+    color: rgb(34, 34, 36);
+    font-weight: bolder;
+}
+.user-card-type{
+    font-size: 12px;
+    color: rgb(98, 100, 115);
+}
+
+.btn-icon-face{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(56, 169, 255);
+    padding: 15px;
+}
+.btn-icon-face:hover{
+    cursor: pointer;
+}
+.btn-icon-message{
+    padding: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #7c5ac2;
+}
+.btn-icon-message:hover{
+    cursor: pointer;
+}
+
+.point-1{
+    display: inline-block;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid grey;
+    margin-right: 10px;
+}
+
+.point-2{
+    display: inline-block;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid grey;
+}
+
+.point-active{
+    background-color: #FF5E3A;
+    border: 1px solid #FF5E3A;
 }
