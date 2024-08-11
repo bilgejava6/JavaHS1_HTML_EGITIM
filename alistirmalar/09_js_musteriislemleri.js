@@ -12,8 +12,10 @@ function kaydet() {
     tabloyuDoldur();
 }
 function duzenle() { }
-function sil() { 
-    alert('Silme işlemi tıklandı');
+
+function sil(index) { 
+    musteriListesi.splice(index,1);
+    tabloyuDoldur();
 }
 function temizle() { }
 
@@ -29,7 +31,7 @@ function tabloyuDoldur() {
                 <td>${mst.adres}</td>
                 <td><img src="https://picsum.photos/50/50" alt="" id="p_image"></td>
                 <td>
-                    <button onclick="sil()" type="button" class="btn btn-danger"> X </button>
+                    <button onclick="sil(${index})" type="button" class="btn btn-danger"> X </button>
                     <button onclick="duzenle()" type="button" class="btn btn-info"> # </button>
                                 
                 </td>
