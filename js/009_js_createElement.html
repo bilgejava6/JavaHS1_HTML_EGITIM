@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="bilesenEkle('TEXT')"  type="button">text ekle</button>
+        <button onclick="bilesenEkle('IMG')"  type="button">resim ekle</button>
+        <button onclick="bilesenEkle('BTN')"  type="button">buton ekle</button>
+        
+    </div>
+
+    <div id="root">
+
+    </div>
+    
+    <script>
+        // <input />
+       let newInput = document.createElement('input');
+       newInput.setAttribute('type','password');
+       newInput.setAttribute('placeHolder','lütfen şifrenizi giriniz'); 
+       newInput.setAttribute('style','width:90%;padding:5px;color:red');
+       let root = document.getElementById('root');
+       root.appendChild(newInput); 
+       function bilesenEkle(elementType){
+            let newElement;
+            switch(elementType){
+                case 'TEXT':
+                    newElement = document.createElement('input');     
+                    newElement.setAttribute('type','text');
+                    newElement.setAttribute('placeHolder','lütfen içerik giriniz'); 
+                    newElement.setAttribute('style','width:90%;padding:5px;color:black;margin-top:10px;margin-bottom:10px');
+                break;
+                case 'IMG':
+                    newElement = document.createElement('img');    
+                    newElement.setAttribute('src','https://picsum.photos/200/200');
+                break;
+                case 'BTN':
+                    newElement = document.createElement('button');
+                    newElement.innerText = 'Lütfen Tıklayın';   
+                break;
+                default: break;
+            }
+            root.appendChild(newElement);
+       }
+    </script>
+</body>
+</html>
