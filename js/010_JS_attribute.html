@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.row {
+				height: 200px;
+				background-color: bisque;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="row">
+			<label id="txt_ifade" style="color: red">Bu ifade sürekli olarak yanıp sönsün</label>
+		</div>
+
+		<script>
+			const lblIfade = document.getElementById("txt_ifade");
+			/**
+			 * setInterval(function,tekrarlama zamanı(milisaniye));
+			 * vereceğiniz bir fonksiyonu belirtilen zaman aralığında tekrar tekrar çalıştırır.
+			 *
+			 */
+			function animasyon() {
+				setInterval(() => {
+					if (lblIfade.style.color === "red") lblIfade.style.color = "yellow";
+					else lblIfade.style.color = "red";
+				}, 500);
+			}
+            
+			/**
+			 * setTimeout(fonksiyon,bekletme zamanı(milisaniye));
+			 * vereceğiniz bir fonksiyonu belirtilen süre kadar beklettikten sonra çalıştırır. Bu işlem
+			 * tekrarlamaz.
+			 */
+            setTimeout(() => {
+                animasyon();
+            }, 3000);
+		</script>
+	</body>
+</html>
