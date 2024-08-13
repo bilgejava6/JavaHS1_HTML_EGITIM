@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    
 </head>
 <body>
     
@@ -21,27 +21,20 @@
                             <th>işlem</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>12234</td>
-                            <td>Muhammet</td>
-                            <td>HOCA</td>
-                            <td>
-                                <input class="form-check-input" type="checkbox"> Seç
-                            </td>
-                        </tr>
+                    <tbody id="active_list">
+                        
                     </tbody>
                 </table>
             </div>
             <div class="col-2 p-2">
                 <div class="mb-3 d-grid">
-                    <button class="btn btn-success">Ekle</button>
+                    <button onclick="secilenleriEkle()" class="btn btn-success">Ekle</button>
                 </div>
                 <div class="mb-3 d-grid">
-                    <button class="btn btn-warning">Tümünü Ekle</button>
+                    <button onclick="tumunuEkle()" class="btn btn-warning">Tümünü Ekle</button>
                 </div>
                 <div class="mb-3 d-grid">
-                    <button class="btn btn-danger">Temizle</button>
+                    <button onclick="temizle()" class="btn btn-danger">Temizle</button>
                 </div>
             </div>
             <div class="col-5 p-2">
@@ -54,15 +47,8 @@
                             <th>işlem</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>12234</td>
-                            <td>Muhammet</td>
-                            <td>HOCA</td>
-                            <td>
-                                <input class="btn btn-danger" type="button" value="Sil">
-                            </td>
-                        </tr>
+                    <tbody id="secilenler_tablosu">
+                        
                     </tbody>
                 </table>
             </div>
@@ -70,5 +56,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="10_js_table.js"></script>
 </body>
 </html>
