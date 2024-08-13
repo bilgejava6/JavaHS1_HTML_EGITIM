@@ -23,3 +23,15 @@ node -v # should print `v22.6.0`
 npm -v # should print `10.8.2`
 ```
 
+    React kurulum notları
+    standart react JS kurulumu için aşağıdaki kodu kullanın
+
+```bash
+    npx create-react-app yeni-uygulamam
+```
+
+    Uygulamanızı TypeScript ile kurmak için TSX
+
+```bash
+    npx create-react-app yeni-uygulama --template typescript
+```
