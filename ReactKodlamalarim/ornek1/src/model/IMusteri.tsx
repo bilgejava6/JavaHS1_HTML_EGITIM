@@ -7,5 +7,7 @@ export interface IMusteri{
     id: number,
     ad: string,
     telefon: string,
-    active: boolean
+    active: boolean,
+    soyad?: string,
+    resim?: string
 }

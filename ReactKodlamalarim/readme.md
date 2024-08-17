@@ -153,3 +153,55 @@ function App(){
 
 export default App;
 ```
+
+## Interface ile template oluşturmak
+  java da bir nesneyi modellemek için class ları kullanır ve onlardan
+  nesne yaratarak kullanırız. TypeScript e ise interface kullanarak
+  oluşturulacak değişken ya da nesnelerin türlerini tanımlarız.
+
+```typescript
+export interface IMusteri{
+    id: number,
+    ad: string,
+    telefon: string,
+    active: boolean,
+    soyad?: string, // ? işareti optional olarak tanımlamaya yarar
+    resim?: string
+}
+```
+
+## Bazı önemli terimler
+  musteri{
+    id: 4,
+    ad: '',
+    soyad: 'ahmet'
+  }
+  empty -> boş demektir, eğer sunucudan bir değer gelirken boş geliyor ise bununla karılaşırsınız.
+
+  musteri{
+    id: 4,
+    ad: , -- null
+    soyad: 'ahmet'
+  }
+  null -> eğer sunucudan ilgili alan için hiç bir değer gelmiyor ise 
+
+  musteri{
+    id: 4,
+    soyad: 'ahmet'
+  }
+  undefined -> okumayı talep ettiğin anahtar değerin kendisi yok ise
+  bununla karşılaşırsın
+
+  ## Döngüler ile çalışmak
+
+  ### forEach
+
+    bir array içerisindeki değerleri döner ve onlarla işlem yapmanızı sağlar.
+    return type ı void dir.
+  
+  ### map
+
+    bir array içerisindeki değerler ile çalışmanızı sağlar ve işlem sonunda
+    dizinin her bir değeri için sonuç döner. ÖZellikle bir return olmaz ise
+    dizinin kendisini döner.
+
