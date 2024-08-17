@@ -205,3 +205,5 @@ export interface IMusteri{
     dizinin her bir değeri için sonuç döner. ÖZellikle bir return olmaz ise
     dizinin kendisini döner.
 
+## React için 3. parti bileşenleri kurmak ve kullanmak
+

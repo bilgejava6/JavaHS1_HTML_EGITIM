@@ -7,6 +7,7 @@ import ArrowFunction from './pages/ArrowFunction';
 import HesapMakinesi from './pages/HesapMakinesi';
 import HesapIslemleri from './pages/HesapIslemleri';
 import Login from './pages/Login';
+import 'bootstrap/dist/css/bootstrap.min.css'
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <Login />
