@@ -207,3 +207,28 @@ export interface IMusteri{
 
 ## React için 3. parti bileşenleri kurmak ve kullanmak
 
+### Boorstrap kullanımı
+
+  bootstrap kullanmak için öncelikle kurulum yapıyoruz.
+```bash
+npm i bootstrap@5.3.3.
+```
+  boorstrap kullanabilmek için root a yani index.tsx e import etmeniz gerekli
+  olan kodu eklemelisiniz.
+
+  import 'bootstrap/dist/css/bootstrap.min.css'
+
+### React Router kullanımı
+
+  react router, react için sayfalar arası geçiş yönetim kütüphanesidir. kurulum için
+
+```bash
+npm i react-router-dom
+```
+
+  kurulum yaptıktan sonra react yönlendirmeleri için index.tsx ya da ayrıca bir sayfada 
+  yönetmek üzere routing bileşenlerini eklemeniz gereklidir.
+  ilk olarak importları yapalım
+  "import {BrowserRouter,Routes,Route} from 'react-router-dom';"  
+  sonra yönlendirme işlemlerini tanımlıyoruz.
+  

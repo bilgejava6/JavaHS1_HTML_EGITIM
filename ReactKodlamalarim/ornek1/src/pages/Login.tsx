@@ -37,10 +37,12 @@ function Login() {
                     </div>
                     <div className='mb-3'>
                             <input placeholder='şifre' className='form-control' type="password"  onChange={evt=> setPassword(evt.target.value)}/>
-                    </div>
-                    
-                    <div className='mb-3 d-grid'>
+                    </div>  
+                    <div className='mb-5 d-grid'>
                             <button className='btn btn-success' onClick={login}>Giriş Yap</button>
+                    </div>
+                    <div className="mb-3 text-center">
+                        <a href="/register">register</a>
                     </div>
                 </div>
             </div>
