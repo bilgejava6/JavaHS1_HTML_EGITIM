@@ -7,7 +7,7 @@ function Register() {
   const [email, setEmail] = useState('');
   const register = ()=>{
     console.log(userName, password, email);
-    fetch('http://localhost:8080/user/register',{
+    fetch('http://34.67.172.44/user/register',{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json'

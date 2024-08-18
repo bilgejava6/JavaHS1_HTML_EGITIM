@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-
+import { useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 function Login() {
+    const nagivate = useNavigate();
     /**
      * 2 input
      * 1 buton
@@ -12,8 +14,26 @@ function Login() {
     const login = ()=>{
         if(userName === '' || password === '')
             setIsEmpty(true);
-        else
-            setIsEmpty(false);
+        else{
+            fetch('http://34.67.172.44/user/login',{
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    'userName': userName,
+                    'password': password
+                })
+            }).then(data=>data.json())
+            .then(response=>{
+                console.log('gelen cevap...: ',response)
+                if(response)
+                    nagivate('/user-list');
+                else    
+                    swal('Uyarı!','Kullanıcı adı ya da şifre hatalıdır','error');
+            })
+        }
+
     }
   return (
     <>

@@ -31,6 +31,7 @@ public class UserProfileController {
 
 
     @GetMapping("/get-all")
+    @CrossOrigin("*")
     public ResponseEntity<List<UserProfile>> getAll(){
         return ResponseEntity.ok(userProfileService.getAll());
     }
