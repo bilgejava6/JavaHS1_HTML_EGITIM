@@ -1,2 +1,15 @@
-package com.muhammet.hslogin.dto.response;public class LoginDto {
+package com.muhammet.hslogin.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class LoginDto {
+    String userName;
+    String password;
 }
