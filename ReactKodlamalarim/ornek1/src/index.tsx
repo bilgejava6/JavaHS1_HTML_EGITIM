@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Register from './pages/Register';
 import UserList from './pages/UserList';
+import ProductList from './pages/ProductList';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 const route = 
@@ -21,7 +22,8 @@ const route =
     <Route path='/app' element={<App />} />
     <Route path='/musteri-listesi' element={<MusteriListesi />} />
     <Route path='/islemler' element={<Islemler />} />
-    <Route path='/user-list' element={<UserList />}/>
+    <Route path='/user-list' element={<UserList />} />
+    <Route path='/product-list' element={<ProductList />} />
   </Routes>
 </BrowserRouter>;
 
