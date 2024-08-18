@@ -19,5 +19,6 @@ public class UserProfile {
     String userName;
     String password;
     String email;
+    String avatar;
 
 }
