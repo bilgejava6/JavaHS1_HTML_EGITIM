@@ -231,4 +231,33 @@ npm i react-router-dom
   ilk olarak importları yapalım
   "import {BrowserRouter,Routes,Route} from 'react-router-dom';"  
   sonra yönlendirme işlemlerini tanımlıyoruz.
-  
+
+
+### Alert kullanımı
+  Uygulamalarımızda belli tepkileri vermek için alert kullanırız. Bunlardan biriside sweet alert
+  kurulum ve kullanımı basittir.
+  Kurulum:
+```bash
+pm i sweetalert --save
+```
+  Kullanım:
+  öncelikle import ediniz.
+
+
+## Fetch İşlemleri
+
+  Bir end-point e istek atmak ve dönen dataları almak için kulnırız.
+
+```tsx
+fetch('http://localhost:8080/user/register',{
+      method: 'POST',
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        'userName': userName,
+        'password': password,
+        'email': email
+      })
+    })
+```

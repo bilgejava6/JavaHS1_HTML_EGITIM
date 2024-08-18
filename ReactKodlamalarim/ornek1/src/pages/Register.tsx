@@ -1,12 +1,28 @@
 import React, { useState } from 'react'
-
+import swal from 'sweetalert';
 function Register() {
   const [userName,setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [rePassword, setRePassword] = useState('');
   const [email, setEmail] = useState('');
   const register = ()=>{
-    
+    console.log(userName, password, email);
+    fetch('http://localhost:8080/user/register',{
+      method: 'POST',
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        'userName': userName,
+        'password': password,
+        'email': email
+      })
+    })
+    .then(data=>data.json()) // dönen datayı json a dönüştür.
+    .then(response=>{  // dönen datayı işliyoruz.
+      console.log(response);
+      swal('Bildirim!','Üyelik Başarı ile oluşturuldu.','success')
+    })
   }
   return (
     <>
