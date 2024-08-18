@@ -1,0 +1,59 @@
+Bilgiler
+----------------
+https://transform.tools/json-to-typescript
+https://mui.com/material-ui/react-rating/
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+https://dummyjson.com/docs/products#products-all
+https://react.dev/learn
+https://reactrouter.com/en/main
+https://randomuser.me/api/?results=5
+
+Ödevler
+---------------
+## ÖDEV1
+
+    1- yeni bir proje oluştur
+    2- gereksiz alanları temizlet
+    3- App sayfası oluştur
+    4- Bir urun template(interface) oluştur
+    5- App içerisinde 5 adet ürün bilgisi olan bir array yap
+    6- Ürünlerin listesini map kullanarak sayfaya html tag leri ile çıktıla
+
+## ÖDEV2
+
+    1- Hesap.Tsx sayfa tanımlayın
+    2- Bootstrap kurulacak ve importları yapılacak
+    3- iki adet input tanımlıyorsunuz (bootstrap input)
+    4- altta label xxl büyük bir label olsun
+    5- herhangi bir input girişi yapıldığında label input
+    içerisine iki inputta var olan sayıların toplamı yazdırılsın.
+
+## Ödev3
+    Not: randomuser.me adresinden kullanıcı bilgilerini çekiniz.
+    1-searchuser.tsx i roouter e ekleyin.
+    2-bu sayfası tasarlayın.
+    2.1- sayfa ekranın ortasına konumlu 10 birimlik bir alanda olacak.
+    2.2- en üstte bir aram input u olacak. sağ tarafında ara butonu olacak
+    2.3- arama işlemi yapıldıktan sonra ekrana gelecek olan liste hemen altta 
+    olacak. sadece liste istiyorum. ul>li
+    Kullanıcı Listesi
+    * muhammet - muhammet@gmail.com
+    * demet - demet@gmail.com
+    3-fetch işlemini yazın. 
+
+## Ödev4 
+    DİKKAT!!!! Araştırma ödevidir. Fetch yerine Axios kullanımını araştırınız.
+    1- fetch-> post ve get isteklerine birer örnek veriniz ve bu kullanımların 
+    axios ile nasıl yazıldığını gösterin.
+
+## Ödev5
+
+    Bir kütüphane uygulası yazınız. (Spring Boot, PostgreSQL)
+    - Kitap Ekle
+    - Kitap Listesi işlemlerini yapabilecek
+    Kitap için özellikleri siz belirleyin. Ancak kitapların resimleri mutlaka olsun
+    resimlerin URL lerini internetten alabilirsiniz. yani kitap url bilgisini 
+    string olarak tutacaksınız.
+    Kitapların listesi ana sayfada olacak, Arama yapılabilecek, kitap ekleme işlemlerini
+    yapılabilecek. ReactJS uygulamsı üzerinden.
+    Tasarım Güzel ve Anlaşılır olacak şekilde size bırakılmıştır.
