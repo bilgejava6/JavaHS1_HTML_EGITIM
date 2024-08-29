@@ -1,1 +1,13 @@
-spring.application.name=HSLogin
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://35.238.4.122:5432/javahs1_eticaret
+    username: postgres
+    password: Bilge*!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

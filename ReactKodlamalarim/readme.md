@@ -33,7 +33,7 @@ npm -v # should print `10.8.2`
     Uygulamanızı TypeScript ile kurmak için TSX
 
 ```bash
-    npx create-react-app yeni-uygulama --template typescript
+    npx create-react-app e-ticaret --template typescript
 ```
 
 ## Uygulamayı başlatmak
@@ -211,7 +211,7 @@ export interface IMusteri{
 
   bootstrap kullanmak için öncelikle kurulum yapıyoruz.
 ```bash
-npm i bootstrap@5.3.3.
+npm i bootstrap@5.3.3
 ```
   boorstrap kullanabilmek için root a yani index.tsx e import etmeniz gerekli
   olan kodu eklemelisiniz.
