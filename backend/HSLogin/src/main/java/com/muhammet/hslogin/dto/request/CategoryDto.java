@@ -1,4 +1,4 @@
-package com.muhammet.hslogin.dto.response;
+package com.muhammet.hslogin.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class LoginDto {
-    String userName;
-    String password;
+public class CategoryDto {
+    Long parentId;
+    String name;
+    String description;
+    String categoryImage;
 }

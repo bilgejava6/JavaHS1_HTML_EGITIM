@@ -1,7 +1,7 @@
 package com.muhammet.hslogin.controller;
 
-import com.muhammet.hslogin.dto.response.LoginDto;
-import com.muhammet.hslogin.dto.response.RegisterDto;
+import com.muhammet.hslogin.dto.request.LoginDto;
+import com.muhammet.hslogin.dto.request.RegisterDto;
 import com.muhammet.hslogin.entity.UserProfile;
 import com.muhammet.hslogin.service.UserProfileService;
 import lombok.RequiredArgsConstructor;
