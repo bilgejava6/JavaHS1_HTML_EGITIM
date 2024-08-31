@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/category")
 @RequiredArgsConstructor
 public class CategoryController {
-    private CategoryService categoryService;
+    private final  CategoryService categoryService;
 
     @PostMapping("/add-category")
     @CrossOrigin("*")
