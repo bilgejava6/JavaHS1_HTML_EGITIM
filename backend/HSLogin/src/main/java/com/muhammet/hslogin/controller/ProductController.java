@@ -1,5 +1,6 @@
 package com.muhammet.hslogin.controller;
 
+import com.muhammet.hslogin.dto.response.BestSellerResponseDto;
 import com.muhammet.hslogin.entity.Product;
 import com.muhammet.hslogin.service.Productervice;
 import lombok.RequiredArgsConstructor;
@@ -27,5 +28,10 @@ public class ProductController {
         return ResponseEntity.ok(productervice.getAll());
     }
 
+    @GetMapping("/get-all-bestseller")
+    @CrossOrigin("*")
+    public ResponseEntity<List<BestSellerResponseDto>> getAllBestSeller(){
+        return ResponseEntity.ok(productervice.getAllBestSeller());
+    }
 
 }
